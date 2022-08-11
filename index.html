@@ -32,8 +32,24 @@
   .items-center {
     align-items: center;
   }
+  .m-8 {
+    margin: 8px;
+  }
+  .p-8 {
+    padding: 8px;
+  }
+  .pt-18 {
+    padding-top: 18px;
+  }
+  .py-18 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 </style>
-<header class="bg-gray-900">
+<header
+  class="bg-gray-900 flex justify-between py-18"
+  style="padding: 18px 12px"
+>
   <div class="flex justify-center items-center">
     <img src="./logo.svg" alt="" />
     <a href="" class="text-white">Pricing</a>
@@ -41,8 +57,8 @@
     <a href="" class="text-white">Blog</a>
     <a href="" class="text-white">Forum</a>
   </div>
-  <div>
-    <a href="" class="text-white block">Login</a>
+  <div class="flex items-center">
+    <a href="" class="text-white">Login</a>
     <button>Sign Up</button>
   </div>
 </header>
