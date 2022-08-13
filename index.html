@@ -7,11 +7,14 @@
   />
   <style>
     body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       margin: 0;
       font-family: "Lato", sans-serif;
     }
     .bg-gray-900 {
-      background-color: #121826;
+      /* background-color: #121826; */
+      background-color: transparent;
     }
     .text-white {
       color: white;
@@ -61,14 +64,41 @@
       padding-left: 16px;
       padding-right: 16px;
     }
+    .py-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .px-28 {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
     .no-underline {
       text-decoration: none;
+    }
+    .bg-brand-teal {
+      background-color: #539d98;
+      width: 125px;
+      height: 43px;
+      border-radius: 56px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+    }
+    .w-full {
+      width: 1600px;
+    }
+    .relative {
+      position: relative;
+    }
+    .z-10 {
+      z-index: 10;
     }
   </style>
 </head>
 
 <header
-  class="bg-gray-900 flex justify-between py-18"
+  class="bg-gray-900 flex justify-between py-18 relative z-10"
   style="padding: 18px 12px"
 >
   <div class="flex justify-center items-center">
@@ -85,6 +115,9 @@
       style="margin-right: 12px"
       >Login</a
     >
-    <button>Sign Up</button>
+    <button class="bg-brand-teal py-12 px-28">Sign Up</button>
   </div>
 </header>
+<section class="relative" style="top: -79px">
+  <img src="./img/hero.png" alt="" class="w-full" />
+</section>
